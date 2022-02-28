@@ -41,6 +41,7 @@ def main(args):
         if hatToOrder.quantity-1 == 0:
             repo.hats.removeByQuantity(hatToOrder.id)
     output.close()
+    repo._close() 
     sys.exit(1)
 
 
